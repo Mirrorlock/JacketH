@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ToggleButton
+        android:id="@+id/centralToggleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="116dp"
+        android:text="ToggleButton"
+        app:layout_constraintBottom_toTopOf="@+id/rightToggleBtn"
+        app:layout_constraintStart_toStartOf="@+id/rightToggleBtn" />
+
+    <SeekBar
+        android:id="@+id/centralSb"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="241dp"
+        android:layout_height="53dp"
+        android:max="4"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="@+id/leftSb"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/leftSb"
+        app:layout_constraintTop_toTopOf="@+id/centralToggleBtn" />
+
+    <TextView
+        android:id="@+id/centralTempTv"
+        android:layout_width="74dp"
+        android:layout_height="68dp"
+        android:gravity="center"
+        android:text="0°C"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/centralSb"
+        app:layout_constraintEnd_toEndOf="@+id/centralSb"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/centralSb" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Central Area"
+        app:layout_constraintBottom_toTopOf="@+id/centralToggleBtn"
+        app:layout_constraintEnd_toEndOf="@+id/centralToggleBtn"
+        app:layout_constraintStart_toStartOf="@+id/centralToggleBtn" />
+
+    <ToggleButton
+        android:id="@+id/rightToggleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="72dp"
+        android:text="ToggleButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/leftSb"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="241dp"
+        android:layout_height="53dp"
+        android:max="4"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/leftToggleBtn"
+        app:layout_constraintTop_toTopOf="@+id/leftToggleBtn" />
+
+    <ToggleButton
+        android:id="@+id/leftToggleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="116dp"
+        android:text="ToggleButton"
+        app:layout_constraintBottom_toTopOf="@+id/centralToggleBtn"
+        app:layout_constraintStart_toStartOf="@+id/centralToggleBtn" />
+
+    <TextView
+        android:id="@+id/leftTempTv"
+        android:layout_width="74dp"
+        android:layout_height="68dp"
+        android:gravity="center"
+        android:text="0°C"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/leftSb"
+        app:layout_constraintEnd_toEndOf="@+id/leftSb"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/leftSb" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left Area"
+        app:layout_constraintBottom_toTopOf="@+id/leftToggleBtn"
+        app:layout_constraintEnd_toEndOf="@+id/leftToggleBtn"
+        app:layout_constraintStart_toStartOf="@+id/leftToggleBtn" />
+
+    <SeekBar
+        android:id="@+id/rightSb"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="241dp"
+        android:layout_height="53dp"
+        android:max="4"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="@+id/leftSb"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/leftSb"
+        app:layout_constraintTop_toTopOf="@+id/rightToggleBtn" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right Area"
+        app:layout_constraintBottom_toTopOf="@+id/rightToggleBtn"
+        app:layout_constraintEnd_toEndOf="@+id/rightToggleBtn"
+        app:layout_constraintStart_toStartOf="@+id/rightToggleBtn" />
+
+    <TextView
+        android:id="@+id/rightTempTv"
+        android:layout_width="74dp"
+        android:layout_height="68dp"
+        android:gravity="center"
+        android:text="0°C"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/rightSb"
+        app:layout_constraintEnd_toEndOf="@+id/rightSb"
+        app:layout_constraintStart_toStartOf="@+id/rightSb" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="193dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:fontFamily="cursive"
+        android:text="Jacket H"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
